@@ -5,7 +5,7 @@ import { ReactComponent as Logo } from '../../assets/crown.svg';
 
 import './header.styles.scss';
 
-const Header = () => {
+const Header = ({ currentUser }) => {
   return (
     <div className='header'>
       <Link to='/' className='logo-container'>
@@ -15,9 +15,18 @@ const Header = () => {
         <Link to='/shop' className='option'>
           Shop
         </Link>
-        <Link to='/signin' className='option'>
-          Sign In
+        <Link to='/contact' className='option'>
+          Contact
         </Link>
+        {currentUser ? (
+          <Link to='/signin' className='option'>
+            Logout
+          </Link>
+        ) : (
+          <Link to='/signin' className='option'>
+            Sign In
+          </Link>
+        )}
       </div>
     </div>
   );
