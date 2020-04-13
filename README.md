@@ -1,6 +1,6 @@
-## Lesson-1
+## Lesson-15
 
-In this lesson, we are exploring how to use Create React App. We are leveraging it to help us bootstrap our application and handle the webpack configuration. 
+We have updated our cart redux files to handle adding an item, we have also connected it to our updated collection-item.
 
 # How to fork and clone
 
@@ -18,3 +18,9 @@ After forking the project, simply clone it the way you would from the new forked
 ## Install dependencies
 
 In your terminal after you clone your project down, remember to run either `yarn` or `npm install` to build all the dependencies in the project.
+
+## Set your firebase config
+
+Remember to replace the `config` variable in your `firebase.utils.js` with your own config object from the firebase dashboard! Navigate to the project settings and scroll down to the config code. Copy the object in the code and replace the variable in your cloned code.
+
+![alt text](https://i.ibb.co/6ywMkBf/Screen-Shot-2019-07-01-at-11-35-02-AM.png "image to firebase config")
