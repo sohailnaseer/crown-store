@@ -10,6 +10,7 @@ import {
 import { createStructuredSelector } from 'reselect';
 
 import CheckoutItem from './../../components/checkout-item/checkout-item.component';
+import StripeButton from '../../components/stripe-button/stripe-button.component';
 
 const CheckOut = ({ cartItems, total }) => {
   return (
@@ -37,6 +38,7 @@ const CheckOut = ({ cartItems, total }) => {
       <div className='total'>
         <span>Total : ${total}</span>
       </div>
+      <StripeButton price={total} />
     </div>
   );
 };
